@@ -3,9 +3,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Digital Resume</title>
 
-  <title>My Resume</title>
-
+  <link href="https://fonts.googleapis.com/css?family=Lexend+Deca|Open+Sans:400,600,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
 
   <!--[if lt IE 9]>
@@ -17,10 +18,8 @@
 	<div class="main-container">
 		<nav>
 			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Portfolio</a></li>
-				<li><a href="#">Contact</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="https://ofega.github.io/portfolio-website/">Portfolio</a></li>
 			</ul>
 		</nav>
 
@@ -39,16 +38,16 @@
 			</div>
 		</header>
 
-		<main>
-			<div>
+		<main id="about">
+			<div class="col-2-grid">
 				<section>
 					<h2>Listen Up...</h2>
-					<p></p>
+					<p class="main-commary">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
 				</section>
 				
 				<section>
 					<h2>Stuff I'm Good At</h2>
-					<ul>
+					<ul class="hobbies-list">
 						<li>Disc Golf</li>
 						<li>Coding up UI</li>
 						<li>Playing lots of video games</li>
@@ -58,41 +57,43 @@
 				</section>
 			</div>
 
-			<section>
+			<section class="table-container">
 				<h2>Work History</h2>
-				<table>
-					<thead>
-						<tr>
-							<td>Yrs</td>
-							<td>Company</td>
-							<td>Title</td>
-							<td>Tech Used</td>
-						</tr>
-					</thead>
-
-					<tbody>
-						<tr>
-							<td>1</td>
-							<td>Apple</td>
-							<td>Software Engineer</td>
-							<td>Swift</td>
-						</tr>
-
-						<tr>
-							<td>2</td>
-							<td>Microsoft</td>
-							<td>Computer Scientist</td>
-							<td>.NET</td>
-						</tr>
-
-						<tr>
-							<td>3</td>
-							<td>Amazon</td>
-							<td>Dev Ops</td>
-							<td>AWS</td>
-						</tr>
-					</tbody>
-				</table>
+				<div>
+					<table>
+						<thead>
+							<tr>
+								<th>Yrs</th>
+								<th>Company</th>
+								<th>Title</th>
+								<th>Tech Used</th>
+							</tr>
+						</thead>
+					
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>Apple</td>
+								<td>Software Engineer</td>
+								<td>Swift</td>
+							</tr>
+					
+							<tr>
+								<td>2</td>
+								<td>Microsoft</td>
+								<td>Computer Scientist</td>
+								<td>.NET</td>
+							</tr>
+					
+							<tr>
+								<td>3</td>
+								<td>Amazon</td>
+								<td>Dev Ops</td>
+								<td>AWS</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 			</section>
 		</main>
 
