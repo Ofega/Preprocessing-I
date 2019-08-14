@@ -1,13 +1,14 @@
 @import './reset.less';
 @import './variables.less';
 
+
 .flexContainer(@justify-content; @align-items) {
 	display: flex;
 	justify-content: @justify-content;
 	align-items: @align-items;
 }
 
-/* Set every element's box-sizing to border-box */
+//Base Styles
 * {
     box-sizing: border-box;
 }
@@ -21,6 +22,8 @@ html, body {
 a, button, h1, h2, h3, h4, h5, h6 {
 	font-family: @headingFont;
 }
+//End of Base Styles
+
 
 .main-container {
 	max-width: 800px;
@@ -86,7 +89,7 @@ header {
 		}
 	
 		p {
-			margin-top: .5rem;
+			margin-top: @xSmallGutter;
 			font-size: 1.2rem;
 			font-weight: medium;
 	
@@ -138,16 +141,13 @@ main {
 			&:first-of-type {
 				h2 {
 					font-size: 2rem;
+					margin-bottom: @xSmallGutter;
 				}
 	
 				@media (max-width: 650px) {
 					margin-bottom: @sectionGutter;
 				}
 			} 
-	
-			p {
-				margin-top: @xSmallGutter;
-			}
 		}
 	
 	}
@@ -179,6 +179,18 @@ main {
 			margin-top: @xSmallGutter;
 			white-space: nowrap;
 		}
+
+		tr {
+			border-bottom: @borderline;
+	
+			&:nth-of-type(2n + 1) {
+				background: @primaryColor;
+			}
+	
+			&:last-of-type {
+				border-bottom: none;
+			}
+		}
 	
 		th {
 			font-family: @headingFont;
@@ -190,18 +202,6 @@ main {
 		th, td {
 			padding: .75rem .75rem;
 			text-align: left;
-		}
-	
-		tr {
-			border-bottom: @borderline;
-	
-			&:nth-of-type(2n + 1) {
-				background: @primaryColor;
-			}
-	
-			&:last-of-type {
-				border-bottom: none;
-			}
 		}
 	}
 }

@@ -126,7 +126,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
 }
@@ -252,14 +251,12 @@ main .col-2-grid section {
 }
 main .col-2-grid section:first-of-type h2 {
   font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
 @media (max-width: 650px) {
   main .col-2-grid section:first-of-type {
     margin-bottom: 2rem;
   }
-}
-main .col-2-grid section p {
-  margin-top: 0.5rem;
 }
 main .hobbies-list {
   border: 1px solid #ddd;
@@ -284,6 +281,15 @@ main .table-container table {
   margin-top: 0.5rem;
   white-space: nowrap;
 }
+main .table-container tr {
+  border-bottom: 1px solid #ddd;
+}
+main .table-container tr:nth-of-type(2n + 1) {
+  background: #F9F9F9;
+}
+main .table-container tr:last-of-type {
+  border-bottom: none;
+}
 main .table-container th {
   font-family: 'Lexend Deca', sans-serif;
   border-top: 1px solid #ddd;
@@ -294,15 +300,6 @@ main .table-container th,
 main .table-container td {
   padding: 0.75rem 0.75rem;
   text-align: left;
-}
-main .table-container tr {
-  border-bottom: 1px solid #ddd;
-}
-main .table-container tr:nth-of-type(2n + 1) {
-  background: #F9F9F9;
-}
-main .table-container tr:last-of-type {
-  border-bottom: none;
 }
 footer {
   background: rgba(0, 0, 0, 0.45);
